@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 1rem;
+  margin: 2rem 0;
+}
+
+button {
+  margin: 5px 10px;
+  padding: 3px;
+  color: white;
+  background: lightseagreen;
+  font-size: 1rem;
+}
