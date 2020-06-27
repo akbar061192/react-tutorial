@@ -1,10 +1,10 @@
 import React from 'react';
-import FormMain from './Forms/FormMain';
+import ReactFragment from './Forms/ReactFragment_setState-async';
 
 function App() {
   return (
     <>
-      <FormMain />
+      <ReactFragment amount="2" />
     </>
   );
 }
