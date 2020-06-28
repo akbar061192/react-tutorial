@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactFragment from './Forms/ReactFragment_setState-async';
 
 function App() {
   return (
     <>
-      <ReactFragment amount="2" />
+      <h1>hello from app</h1>
     </>
   );
 }

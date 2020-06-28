@@ -9,7 +9,7 @@ class FormMain extends Component {
   };
 
   handleChange = event => {
-    // const textValue = event.target.value;
+    const textValue = event.target.value;
     // const name = event.target.name;
 
     // Use Case for controlled input type -  can manipulate the inputs for ex: below can make entered input as upperCase.

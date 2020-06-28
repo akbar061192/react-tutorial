@@ -2,9 +2,33 @@ import React, { Component } from 'react';
 import './Tour.css';
 
 class Tour extends Component {
-  state = {
-    showInfo: false
-  };
+  constructor(props) {
+    super(props);
+    console.log(`Tour constructor call ${this.props.tour.id}`);
+    this.state = {
+      showInfo: false
+    };
+  }
+
+  componentWillMount() {
+    console.log(`Tour componentWillMount call ${this.props.tour.id}`);
+  }
+  componentDidMount() {
+    console.log(`Tour componentDidMount call ${this.props.tour.id}`);
+  }
+
+  shouldComponentUpdate() {
+    console.log(`Tour shouldComponentUpdate call ${this.props.tour.id}`);
+    return true;
+  }
+
+  componentWillUpdate() {
+    console.log(`Tour componentWillUpdate call ${this.props.tour.id}`);
+  }
+
+  componentDidUpdate() {
+    console.log(`Tour componentDidUpdate call ${this.props.tour.id}`);
+  }
 
   toggleInfo = () => {
     this.setState({
@@ -13,6 +37,8 @@ class Tour extends Component {
   };
 
   render() {
+    console.log(`Tour render call ${this.props.tour.id} `);
+
     const { id, city, img, name, info } = this.props.tour;
     const { handleDelete } = this.props;
 
