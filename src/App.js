@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
+import MovieList from "./state-management/MovieList";
+import Nav from "./state-management/Nav";
+import { MovieProvider } from "./state-management/MovieContext";
 
 function App() {
   return (
     <>
-      <h1>hello from app</h1>
+      <MovieProvider>
+        <Nav />
+        <MovieList />
+      </MovieProvider>
     </>
   );
 }
