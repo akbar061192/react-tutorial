@@ -5,7 +5,7 @@ const myObj = {
   b: 2,
   c: 3,
   [beverage]: 'fever',
-  beverage: beverage
+  beverage: beverage,
 };
 
 console.log(myObj);

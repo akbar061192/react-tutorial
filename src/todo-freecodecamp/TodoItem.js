@@ -3,6 +3,13 @@ import React from 'react';
 const TodoItem = (props) => {
   const { id, text, completed } = props.item;
   const { handleChange } = props;
+
+  const textStyles = {
+    fontStyle: 'italic',
+    color: 'lightgrey',
+    textDecoration: 'line-through',
+  };
+
   return (
     <div style={{ margin: ' 5rem auto', width: '300px' }}>
       <input
@@ -11,7 +18,7 @@ const TodoItem = (props) => {
         checked={completed}
         onChange={() => handleChange(id)}
       />
-      <span>{text}</span>
+      <span style={completed ? textStyles : null}>{text}</span>
       <hr />
     </div>
   );
