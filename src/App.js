@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import randomcolor from 'randomcolor';
+import React from 'react';
 
 const App = () => {
   return (
