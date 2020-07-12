@@ -1,13 +1,13 @@
-import React, { createContext, Component } from "react";
+import React, { createContext, Component } from 'react';
 
 const MovieContext = createContext();
 
 class MovieProvider extends Component {
   state = {
     movies: [
-      { id: 1, name: "Breaking Bad", price: "$20" },
-      { id: 2, name: "Scared Games", price: "$30" },
-      { id: 3, name: "Delhi Crime", price: "$40" },
+      { id: 1, name: 'Breaking Bad', price: '$20' },
+      { id: 2, name: 'Scared Games', price: '$30' },
+      { id: 3, name: 'Delhi Crime', price: '$40' },
     ],
   };
 
