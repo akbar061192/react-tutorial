@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import randomcolor from 'randomcolor';
 
-class App extends Component {
-  render() {
-    return <></>;
-  }
-}
+const App = () => {
+  return (
+    <>
+      <div>app</div>
+    </>
+  );
+};
 
 export default App;
